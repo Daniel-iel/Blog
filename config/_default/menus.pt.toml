@@ -1,0 +1,17 @@
+  [[main]]
+  name = "Inicio"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "Artigos"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[main]]
+  name = "Portfólio"
+  weight = 300
+  identifier = "portfolio"
+  url = "/portfolio/"

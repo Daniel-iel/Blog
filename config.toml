@@ -1,0 +1,30 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "anatole"
+
+[params]
+title = "I'm Daniel Santa Rosa"
+author = "Daniel Oliveira"
+description = "Software Engineer"
+profilePicture = "images/profile.jpg"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "Portfolio"
+  weight = 200
+  identifier = "portfolio"
+  url = "/portfolio/"
