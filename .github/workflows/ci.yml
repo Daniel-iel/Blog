@@ -2,18 +2,18 @@ name: github pages
 
 on:
   push:
-   tags:
+    tags:
       - v*
       - doc*
-   branches: [main]
+    branches: [main]
   pull_request:
-   branches: [main, "doc/*"]
-   
+    branches: [main, "doc/*"]
+
 jobs:
   gh-release:
     env:
       DOC_FOLDER: "./docs"
-  
+
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           # extended: true
 
       - name: Build

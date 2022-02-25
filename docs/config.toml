@@ -1,4 +1,4 @@
-baseURL = 'https://daniel-iel.github.io/Blog'
+baseURL = 'https://daniel-iel.github.io'
 languageCode = 'en-us'
 title = 'Blog'
 theme = "anatole"
