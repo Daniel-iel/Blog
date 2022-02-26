@@ -27,8 +27,7 @@ jobs:
           hugo-version: "latest"
           # extended: true
 
-      - name: Build
-        working-directory: ${{ env.DOC_FOLDER }}
+      - name: Build        
         run: hugo --minify
 
       - name: Deploy
@@ -36,4 +35,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GH_PAGES_DEPLOY }}
-          publish_dir: ${{ env.DOC_FOLDER }}/public
+          publish_dir: ./public
