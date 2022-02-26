@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html
+  dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+  lang="{{- site.Language.Lang -}}"
+  data-theme="{{- .Site.Params.displayMode -}}"
+  class="html"
+>
+  {{- partial "head.html" . -}}
+  <body
+    {{ if eq .Params.displayMode "dark" }}
+      class="body theme--dark"
+
+    {{ else }}
+      class="body theme--light"
+
+    {{ end }}
+  >
+    <div class="wrapper">
+      <aside class="wrapper__sidebar">
+        {{- partial "sidebar.html" . -}}
+      </aside>
+      <main class="wrapper__main">
+        <header class="header">{{ partial "navbar.html" . }}</header>
+        {{- block "main" . }}{{- end }}
+      </main>
+    </div>
+
+    {{- partial "footer.html" (dict "context" . "footerClassModifier" "base") -}}
+
+    {{- if (eq .Site.Params.simpleAnalytics.enable true) -}}
+      {{- partial "analytics/simpleanalytics.html" . -}}
+
+
+    {{- end -}}
+  </body>
+</html>

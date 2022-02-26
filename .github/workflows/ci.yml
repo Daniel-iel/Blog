@@ -12,27 +12,27 @@ on:
 jobs:
   gh-release:
     env:
-      DOC_FOLDER: "./docs"
+      APP_FOLDER: "./app"
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
+      - name: Setup Hugo 🔧
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
           # extended: true
 
-      - name: Build        
+      - name: Build ⚙️
+        working-directory: ${{ env.APP_FOLDER }}
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Deploy ✉️
+        uses: peaceiris/actions-gh-pages@v3              
         with:
           github_token: ${{ secrets.GH_PAGES_DEPLOY }}
-          publish_dir: ./public
+          publish_dir: ${{ env.APP_FOLDER }}/public
