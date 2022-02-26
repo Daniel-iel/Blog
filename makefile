@@ -1,8 +1,8 @@
-serve:
+server:
 	hugo server -D
 
 build:
 	hugo -D
 
 build-min:
-	hugo --minify	
+	hugo --minify 

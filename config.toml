@@ -5,9 +5,24 @@ theme = "anatole"
 
 [params]
 title = "I'm Daniel Santa Rosa"
-author = "Daniel Oliveira"
+author = "Daniel Santa Rosa"
 description = "Software Engineer"
 profilePicture = "images/profile.jpg"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/danieliel/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/Daniel-iel"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:iel_182@hotmail.com"
 
 [menu]
 

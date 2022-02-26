@@ -5,19 +5,19 @@ portfolioitems:
       - name: Spinner
         image: "https://github.com/SpinnerAlloc/Spinner/blob/main/Assets/svgexport-6.png"
         link: https://github.com/SpinnerAlloc/Spinner
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description: "Spinner is a simple object mapper, It’s also useful to communicate to any system that uses a positional string as communication."
         tags:
           - Open Source
           - .Net
         authors:
           - Daniel Oliveira
 
-      - name: Zero
-        image: "https://github.com/SpinnerAlloc/Spinner/blob/main/Assets/svgexport-6.png"
-        link: https://github.com/SpinnerAlloc/Spinner
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        tags:
-          - Open Source
-          - .Net
-        authors:
-          - Daniel Oliveira
+      # - name: Zero
+      #   image: "https://github.com/SpinnerAlloc/Spinner/blob/main/Assets/svgexport-6.png"
+      #   link: https://github.com/SpinnerAlloc/Spinner
+      #   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      #   tags:
+      #     - Open Source
+      #     - .Net
+      #   authors:
+      #     - Daniel Oliveira
