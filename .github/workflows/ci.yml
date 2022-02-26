@@ -29,10 +29,10 @@ jobs:
 
       - name: Build ⚙️
         working-directory: ${{ env.APP_FOLDER }}
-        run: hugo -D --minify
+        run: hugo --minify
 
       - name: Deploy ✉️
         uses: peaceiris/actions-gh-pages@v3              
         with:
-          github_token: ${{ secrets.GH_PAGES_DEPLOY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.APP_FOLDER }}/public
