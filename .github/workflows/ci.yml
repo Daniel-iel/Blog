@@ -12,7 +12,7 @@ on:
 jobs:
   gh-release:
     env:
-      APP_FOLDER: "./app"
+      APP_FOLDER: "${{ github.workspace }}/app"
 
     runs-on: ubuntu-latest
     steps:
