@@ -1,5 +1,6 @@
 <head>
-    {{ template "_internal/google_analytics.html" . }}   
+    {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
     <title>
       {{ if (eq .Site.Params.reversepagetitle true) }}
         {{ with .Title }}
