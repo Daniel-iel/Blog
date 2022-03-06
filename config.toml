@@ -2,7 +2,7 @@ baseURL = "https://daniel-iel.github.io/Blog"
 languageCode = "en-us"
 title = "Blog"
 theme = "anatole"
-googleAnalytics = "G-XDYSWD1TX6"
+googleAnalytics = "G-XHP7DC6VJK"
 
 [params]
 title = "I'm Daniel Santa Rosa"
