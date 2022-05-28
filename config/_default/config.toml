@@ -1,6 +1,6 @@
 baseURL = "https://daniel-iel.github.io/Blog"
 languageCode = "en"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "pt"
 title = "Blog"
 
 # theme as hugo module

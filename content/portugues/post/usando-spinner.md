@@ -25,7 +25,7 @@ Spinner é distribuído através do [nuget](https://www.nuget.org/packages/Spinn
 Para configurar o layout da string que iremos gerar no final do processo, iremos utilizar os atributos `ObjectMapper` e `WriteProperty`.
 
 **ObjectMapper:** atributo que trabalha como um limitado geral de posições, ou seja, se a string que estamos gerando for maior
-que a soma de todos os valores contidos na propriedade *length* dos atributos **WriteProperty** e **WriteProperty**, os caracteres que excederem o limite serão ignoradas.
+que a soma de todos os valores contidos na propriedade *length* dos atributos **WriteProperty** e **ReadProperty**, os caracteres que excederem o limite serão ignorados.
 
 - **length:** tamanho máximo da string final.
 
@@ -53,7 +53,7 @@ public struct Pessoa
 }
 ```
 
-**WriteProperty:** atributo que define a posição que iremos escrever o valor.
+**ReadProperty:** atributo que define a posição que iremos escrever o valor.
 
 - **start:** posição inicial do campo dentro da string.
 - **length:** tamanho de caracteres do campo.
@@ -84,14 +84,11 @@ Podemos usar o spinner de duas formas, a primeira é convertendo uma instância 
 
 ``` csharp
     //instanciando a classe
-    Pessoa pessoa = new Pessoa("Fulano", "011659888888");
-    
+    Pessoa pessoa = new Pessoa("Fulano", "011659888888");    
     //instanciando o Spinner
     Spinner<Pessoa> spinner = new Spinner<Pessoa>(pessoa);
-
     //gerando a string
     string stringGerada = spinner.WriteAsString();
-
     //stringGerada:               Fulano   011659888888
 ```
 

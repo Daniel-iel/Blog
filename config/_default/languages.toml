@@ -4,6 +4,6 @@ LanguageName = "EN"
 contentDir = "content/english"
 
 [pt]
-weight = 1
+weight = 2
 LanguageName = "PT"
 contentDir = "content/portugues"

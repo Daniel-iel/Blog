@@ -2,16 +2,16 @@
   name = "Home"
   identifier = "home"
   weight = 100
-  url = "/"
+  url = "/en/"
 
   [[main]]
   name = "Posts"
   weight = 200
   identifier = "posts"
-  url = "/post/"
+  url = "/en/post/"
 
   [[main]]
   name = "Portfolio"
   weight = 300
   identifier = "portfolio"
-  url = "/portfolio/"
+  url = "/en/portfolio/"
