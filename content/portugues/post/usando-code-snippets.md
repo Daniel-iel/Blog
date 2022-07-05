@@ -60,7 +60,7 @@ Code Snippet é uma forma encapsular trechos de código em forma de atalhos, pod
 
 ### Code
 
- A tag code é utilizada para definir o código que será executado, quando o atalho do campo Shortcut for digitado.
+ A tag code é utilizada para definir o código que será executado, quando o atalho do campo Shortcut for digitado na linguqgem escolhida.
 
 ### Literal
 
@@ -74,11 +74,11 @@ A tag literal é utilizada para definir o valor que será substituído no códig
 
 A tag import é utilizada para importar bibliotecas que serão utilizadas no código.
 
-- **Namespace**: se o seu código necessitar de algum using, o mesmo deve ser definido nessa tag.
+- **Namespace**: se o seu código necessitar de algum using, o namespace deve ser definido nessa tag.
 
 ## Exemplo
 
-Para o nosso exemplo, vamos criar um código snippet que irá criar um range de números, com o seu resultamos iremos printar o total de números gerados.
+Para o nosso exemplo, vamos criar um código snippet que irá criar um range de números e com o resultado, iremos exibir o total de números gerados.
 
 ### Criando um arquivo
 
@@ -120,14 +120,14 @@ Salve o xml abaixo de exemplo `{NOME_ARAQUIVO}.snippet` em algum diretório seu 
 
 :memo: **Note:** É importante que o arquivo xml tenha a extensão .snippet.
 
-### Importando arquivo
+### Importando o arquivo
 
 1. Abra o visual studio.
 2. Localize a barra de ferramentas no menu superior.
 3. Digite `Code Snippet manger`.
 4. No dropdown de opções, selecione a linguagem do código e clique na opção importar.
 5. Localize o arquivo salvo no computador e depois clique em finalizar.
-6. Abra um arquivo na liguagem selecionado na tag Code no arquivo .snippet, digite o atalho do código + tab + tab para ver o resultado.
+6. Abra um arquivo na liguagem selecionado na tag Code do arquivo .snippet, digite o atalho do código + tab + tab para ver o resultado.
 
 ![ ](/Blog/images/posts/code-snippet.gif)
 
