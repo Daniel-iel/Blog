@@ -13,7 +13,7 @@ tags = [
 
 C# Tip 💡
 
-C# 11 𝗿𝗲𝗾𝘂𝗶𝗿𝗲𝗱 keyword, permite que uma propriedade seja marcada com obrigatória, forçando o desenvovledor a fornecer um valor para essa propriedade em tempo de desenvolvimento.
+C# 11 𝗿𝗲𝗾𝘂𝗶𝗿𝗲𝗱 keyword, permite que uma propriedade seja marcada com obrigatória, forçando o desenvolvedor a fornecer um valor para essa propriedade em tempo de desenvolvimento.
 
 ```csharp
 public class Exemplo
