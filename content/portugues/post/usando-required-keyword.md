@@ -6,7 +6,7 @@ description = "C# Tip"
 tags = [
     "c# 11",
     "c#",
-    "𝗿𝗲𝗾𝘂𝗶𝗿𝗲𝗱 keyword",
+    "required keyword",
     "C# tips"   
 ]
 +++
